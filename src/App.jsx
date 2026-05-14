@@ -1,5 +1,6 @@
 import Header from './components/Header';
 import Sidebar from './components/Sidebar';
+import MainContent from './components/MainContent';
 import Footer from './components/Footer';
 
 const App = () => {
@@ -14,11 +15,6 @@ const App = () => {
     mainLayout: {
       display: 'flex',
       flex: 1
-    },
-    contentArea: {
-      flex: 1,
-      padding: '20px',
-      backgroundColor: '#f4f4f4'
     }
   };
 
@@ -27,10 +23,7 @@ const App = () => {
       <Header />
       <div style={styles.mainLayout}>
         <Sidebar />
-        <main style={styles.contentArea}>
-          <h2>Dashboard Overview</h2>
-          <p>This is the main content area (placeholder).</p>
-        </main>
+        <MainContent />
       </div>
       <Footer />
     </div>
