@@ -1,4 +1,5 @@
 import Header from './components/Header';
+import Footer from './components/Footer';
 import './App.css';
 
 function App() {
@@ -6,8 +7,10 @@ function App() {
     <div className="app-container">
       <Header />
       <main>
-        <p>This is the main content area developed in feature/header branch.</p>
+        <p>Welcome to the Software Engineering Lab.</p>
+        <p>This is the main content area developed in feature branches.</p>
       </main>
+      <Footer />
     </div>
   );
 }
