@@ -9,8 +9,8 @@ const App = () => {
       <Header />
       <div style={styles.mainArea}>
         <Sidebar />
-        <main style={styles.content}>
-          <h2>Welcome to the Lab</h2>
+          <main style={styles.content}>
+          <h2>Hero Section Content</h2>
           <p>This is the main content area (placeholder).</p>
         </main>
       </div>
