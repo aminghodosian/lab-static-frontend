@@ -1,18 +1,38 @@
+import React from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import './App.css';
+import Sidebar from './components/Sidebar';
 
-function App() {
+const App = () => {
   return (
-    <div className="app-container">
+    <div style={styles.container}>
       <Header />
-      <main>
-        <p>Welcome to the Software Engineering Lab.</p>
-        <p>This is the main content area developed in feature branches.</p>
-      </main>
+      <div style={styles.mainArea}>
+        <Sidebar />
+        <main style={styles.content}>
+          <h2>Welcome to the Lab</h2>
+          <p>This is the main content area (placeholder).</p>
+        </main>
+      </div>
       <Footer />
     </div>
   );
-}
+};
+
+const styles = {
+  container: {
+    display: 'flex',
+    flexDirection: 'column',
+    minHeight: '100vh',
+  },
+  mainArea: {
+    display: 'flex',
+    flex: 1,
+  },
+  content: {
+    flex: 1,
+    padding: '1rem',
+  }
+};
 
 export default App;
